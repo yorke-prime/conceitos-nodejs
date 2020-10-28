@@ -84,7 +84,7 @@ app.delete("/repositories/:id", idVerification, (request, response) => {
 
 });
 
-app.put("/repositories/:id/like",  idVerification, (request, response) => {
+app.post("/repositories/:id/like",  idVerification, (request, response) => {
   // TODO
   const {id} = request.params;
   
